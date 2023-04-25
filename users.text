@@ -1,0 +1,11 @@
+[superuser]
+admin:pass
+
+[superuser-panel]
+user:notcommonpass
+
+[superuser-panel]
+userActive:notcommonpass
+
+[superuser-panel]
+userInactive:notcommonpass
