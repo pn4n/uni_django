@@ -4,8 +4,8 @@ admin:pass
 [superuser-panel]
 user:notcommonpass
 
-[superuser-panel]
+[user-panel]
 userActive:notcommonpass
 
-[superuser-panel]
+[user-panel]
 userInactive:notcommonpass
