@@ -8,4 +8,4 @@ from django.http import HttpResponse
 # 	return HttpResponse(text) #, content_type="text/plain"
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'static_handler.html')
