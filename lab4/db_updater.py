@@ -36,4 +36,53 @@ def execute_non_sql(query: str):
 
 # execute_sql("INSERT INTO articles_article VALUES (5, ?, ?, DATE(), 1)", tuple((new_record_title, new_record_text)))
 
-execute_non_sql("ALTER TABLE articles_article RENAME TO articles2_article")
+new_text = """You have to have a party
+When you're in a state like this
+You can really move it all
+You have to vote and change
+
+You have to get right out of it
+Like out of all this mess
+You'll say yeah to anything
+If you believe all this, but
+
+Don't cry, don't do anything
+No lies, back in the government
+No tears, party time is here again
+President gas is up for president
+
+Line up, put your kisses down
+Say yeah, say yes again
+Stand up, there's a head count
+President gas on everything but roller skates
+
+It's sick the price of medicine
+Stand up, we'll put you on your feet again
+Open up your eyes
+Just to check that your asleep again
+President gas is president gas again
+
+He comes in from the left sometimes
+He comes in from the right
+It's so heavily advertised that he wants you and I
+
+It's a real cowboy set your electric company
+Every day is "Happy Days"
+It's hell without the sin, but
+
+Don't cry, don't do anything
+No lies, back in the government
+No tears, party time is here again
+President gas is up for president
+
+Line up, put your kisses down
+Say yeah, say yes again
+Stand up, there's a head count
+President gas on everything but roller skates
+
+It's sick the price of medicine
+Stand up, we'll put you on your feet again
+Open up your eyes just to check that you're asleep again
+President gas is president gas again"""
+
+execute_sql("UPDATE articles2_article SET text=? WHERE id=?", tuple((new_text, 5)))
