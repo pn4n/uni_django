@@ -1,0 +1,23 @@
+<title>Архив статей</title>
+<body>
+	<div class="header">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/LiveJournal_icon.svg/1024px-LiveJournal_icon.svg.png" 
+			 alt="logo"
+			 width="100" >
+	</div>
+	<div class="archive">
+		
+		{% for post in posts %}
+		<div class="one-post">
+			<h2 class="post-title">{{ post.title }}</h2>
+			<div class="article-info">
+			<div class="article-author">{{ post.author.username }}</div>
+			<div class="article-created-date">{{ post.created_date }}</div>
+			</div>
+			<p class="article-text">{{ post.get_excerpt }}</p>
+		</div>
+		{% endfor %}
+			
+	</div>
+	</body>
+	
