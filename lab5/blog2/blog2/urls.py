@@ -20,6 +20,9 @@ from articles2 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('article/new/', views.create_post),
+    path('login/', views.loginn),
+    path('logout/', views.logoutt),
+    path('register/', views.register),
     re_path(r'^article/(?P<article_id>\d+)$', views.get_article, name='get_article'),
     path('', views.archive, name='archive'),
 ]
